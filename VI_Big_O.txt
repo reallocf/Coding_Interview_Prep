@@ -1,0 +1,35 @@
+1. The following code computes the product of a and b. What is it's runtime?
+   O(b)
+
+2. The following code computes a^b. What is it's runtime?
+   O(b)
+
+3. The following code computes a % b. What is its runtime?
+   O(1)
+
+4. The following code performs integer division. What is its runtime (assume a and b are both positive)
+   O(a / b)
+
+5. The following code computes the [integer] square root of a number. If the number is not a perfect square (there is no integer root), then it returns -1. It does this by successive guessing. If n is 100, it first guesses 50. Too high? Try something lower - halfway between 1 and 50. What is it's runtime?
+   O(log(n))
+
+6. The following code computes the [integer] square root of a number. If the number is not a perfect square (there is no integer square root), then it returns -1. It does this by trying increasingly large numbers until it finds the right value (or is too high). What is its runtime?
+   O(n^1/2)
+
+7. If a binary search tree is not balanced, how long might it take (worst case) to find an element in it?
+   O(n)
+
+8. You are looking for a specific value in a binary tree, but the tree is not a binary search tree. What is the time complexity of this?
+   O(n)
+
+9. The appendToNew method appends a value to an array by creating a new, longer array and returning this longer array. You've used the appendToNew method to create a copyArray function that repeatedly calls appendToNew. How long does copying an array take?
+   O(n^2)
+
+10. The following code sums the digits in a number. What is its big O time?
+	O(log(n))
+
+11. The following code prints all strings of length k where the characters are in sorted oreder. It does this by generating all strings of length k and checking if each is sorted. What is its runtime?
+	O(kc^k)
+
+12. The following code computes the intersection (the number of elements in common) of two arrays. It assumes that neither array has duplicates. It computes the intersection by sorting one array (array b) and then iterating through array a checking (via binary search) if each value is in b. What is its runtime?
+	O(b*log(b) + a*log(b))
